@@ -1,9 +1,3 @@
-name := "scalaz"
-
-version := "0.1"
-
-scalaVersion := "2.11.1"
-
 val scalazVersion = "7.0.6"
 
 libraryDependencies ++= Seq(
@@ -12,7 +6,3 @@ libraryDependencies ++= Seq(
   "org.scalaz" %% "scalaz-typelevel" % scalazVersion,
   "org.scalaz" %% "scalaz-scalacheck-binding" % scalazVersion % "test"
 )
-
-scalacOptions += "-feature"
-
-initialCommands in console := "import scalaz._, Scalaz._"
